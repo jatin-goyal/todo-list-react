@@ -8,10 +8,11 @@
   height: 150vh;
 
   background: linear-gradient(
-    316.74deg,
-    rgba(224, 62, 62, 0.83) -33.12%,
-    rgba(244, 212, 40, 0.84) 115.21%
-  );
+      316.74deg,
+      rgba(224, 62, 62, 0.83) -33.12%,
+      rgba(244, 212, 40, 0.84) 115.21%
+    )
+    center center / cover no-repeat fixed;
   box-shadow: inset -8px -12px 82px -7px rgba(0, 0, 0, 0.05);
 }
 
