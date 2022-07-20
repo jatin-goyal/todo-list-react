@@ -5,7 +5,7 @@
 }
 
 .App {
-  height: 150vh;
+  overflow-y: scroll;
 
   background: linear-gradient(
       316.74deg,
