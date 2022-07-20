@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 
-const Todo = ({ text, todo, todos, setTodos, completed }) => {
+const Todo = ({ text, todo, todos, setTodos }) => {
   const deleteTodoHandler = () => {
     setTodos(todos.filter((element) => element.key !== todo.key));
   };

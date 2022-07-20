@@ -10,16 +10,6 @@ function App() {
   const [status, setStatus] = useState("All");
   const [filteredTodos, setFilteredTodos] = useState([]);
 
-  // USE EFFECTS
-  useEffect(() => {
-    getLocalTodos();
-  }, []);
-
-  useEffect(() => {
-    saveToLocal();
-    filterHandler();
-  }, [todos, status]);
-
   // FUNCTIONS
   const filterHandler = () => {
     switch (status) {
@@ -48,6 +38,16 @@ function App() {
     }
   };
 
+  // USE EFFECTS
+  useEffect(() => {
+    getLocalTodos();
+  }, []);
+
+  useEffect(() => {
+    saveToLocal();
+    filterHandler();
+  }, [todos, status]);
+
   // returning JSX
   return (
     <div className="App">
@@ -61,7 +61,6 @@ function App() {
         setTodos={setTodos}
         setInputText={setInputText}
         setStatus={setStatus}
-        // saveToLocal={saveToLocal}
       />
 
       {/* list  */}
